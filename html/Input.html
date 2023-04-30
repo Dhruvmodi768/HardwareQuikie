@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<style>
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .mainContainer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 100vh;
+        padding: 0 20px;
+        background: linear-gradient(90deg,
+                rgba(2, 0, 36, 1) 0%,
+                rgba(135, 185, 180, 1) 56%,
+                rgba(0, 212, 255, 1) 100%);
+        position: relative;
+    }
+
+    .heroText {
+        font-size: 18px;
+        font-weight: 600;
+        margin: 3px;
+        padding: 1.5px;
+    }
+
+    .userInput {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .userInput input {
+        width: 40%;
+        padding: 10px 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+
+    .titleText {
+        font-size: 16px;
+        font-weight: 400;
+        display: none;
+    }
+
+    #filteredData {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .card {
+        max-width: 400px;
+        width: 100%;
+        background: #e9c46a;
+        text-align: left;
+        padding: 20px;
+    }
+
+    .card ul li {
+        list-style: none;
+        margin: 0;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: 2px;
+    }
+
+    .logoutButton {
+        padding: 10px;
+        margin: 10px 0;
+        position: absolute;
+        top: 0;
+        right: 35px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .logoutButton a {
+        text-decoration: none;
+        color: #000;
+    }
+</style>
+<script src="../js/filterData.js"></script>
+
+<body>
+    <div class="mainContainer">
+        <div class="heroText">
+            <h1>Please enter your budget</h1>
+        </div>
+        <div class="userInput">
+            <input type="text" id="budget" required placeholder="Enter a number between 30,000 and 1,65,000" />
+        </div>
+        <div class="titleText">
+            <h2> Here are the best options for you</h2>
+        </div>
+        <div id="filteredData"></div>
+        <div class="logoutButton">
+            <a href="../index.html">Logout</a>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Hardware Quick-ie</title>
+</head>
+<style>
+	html,
+	body {
+		margin: 0;
+		box-sizing: border-box;
+		padding: 0;
+	}
+	
+	.app {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		height: 100vh;
+		background: rgb(2, 0, 36);
+		background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(55, 61, 74, 1) 56%, rgba(0, 212, 255, 1) 100%);
+	}
+
+	.heroImage {
+		text-align: center;
+	}
+
+	.heroText {
+		font-size: 36px;
+		font-weight: 600;
+		color: #fff;
+		text-align: center;
+	}
+
+	.buttonGroupContainer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 20px;
+	}
+
+	.btn {
+		border: 1px solid rgba(122, 171, 196, 0.147);
+		border-radius: 4px;
+		padding: 15px;
+		color: #fff;
+	}
+
+	.btn:hover {
+		background: rgba(122, 171, 196, 0.147);
+		border: #fff solid 1px;
+	}
+
+	.btn a {
+		font-size: 24px;
+		font-weight: 600;
+		text-decoration: none;
+		color: #fff;
+	}
+</style>
+<script src="js/uploadData.js"></script>
+
+<body>
+	<div class="app">
+		<div class="heroText">
+			<h1>Welcome to</h1>
+		</div>
+		<div class="heroImage">
+			<img src="./images/Hardware Quikie-logos_white.png" alt="Quick logo" width="400px" height="450px">
+		</div>
+		<div class="buttonGroupContainer">
+			<div class="btn login">
+				<a href="./html/login.html">Login</a>
+			</div>
+			<div class="btn signup">
+				<a href="./html/signup.html">Sign Up</a>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
