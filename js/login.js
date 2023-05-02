@@ -1,3 +1,10 @@
+document.getElementById("password").addEventListener("keyup", function (event) {
+	if (event.keyCode === 13) {
+		event.preventDefault();
+		loginUser();
+	}
+});
+
 const loginUser = () => {
 	const users = JSON.parse(localStorage.getItem("users"));
 	console.log(users)

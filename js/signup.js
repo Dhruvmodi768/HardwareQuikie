@@ -1,3 +1,13 @@
+document.getElementById("confirmPassword").addEventListener("keyup", function (event) {
+	if (event.keyCode === 13) {
+		event.preventDefault();
+		signUpUser();
+	}
+});
+
+
+
+
 const signUpUser = () => {
 	// Get all the users from localStorage
 	let users = JSON.parse(localStorage.getItem("users")) || [];
